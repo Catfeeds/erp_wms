@@ -1,0 +1,49 @@
+<div class="container-fluid"> 
+  <!-- BEGIN PAGE HEADER-->
+  <div class="row-fluid">
+    <div class="span12">
+      <h3 class="page-title"> <small> </small> </h3>
+      <ul class="breadcrumb">
+        <li> <i class="icon-home"></i> <a href="#">管理员后台</a> <span class="icon-angle-right"></span> </li>
+        <li> <a href="#">消息提示</a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- END PAGE HEADER--> 
+  <!-- BEGIN PAGE CONTENT-->
+  <div class="row-fluid">
+    <div class="span12"> 
+      <!-- BEGIN VALIDATION STATES-->
+      <div class="portlet box blue">
+        <div class="portlet-title">
+          <div class="caption"><i class="icon-reorder"></i>消息提示</div>
+        </div>
+        <div class="portlet-body" style="height:400px;"> 
+          <!-- BEGIN FORM-->
+          <table class="table" style="width:400px;">
+            <tbody>
+              <tr>
+                <td colspan="2" style="font-size:12px;" ><p><{$act_msg}></p>
+                  <p>................................</p></td>
+              </tr>
+            <{foreach item=v key=url from=$act_url}>
+            <tr>
+              <td width="20" ><i class="icon-bookmark"></i></td>
+              <td><a  href='<{$url}>'><{$v}></a></td>
+            </tr>
+            <{/foreach}>
+            </tbody>
+            
+          </table>
+          <!-- END FORM--> 
+        </div>
+      </div>
+      <!-- END VALIDATION STATES--> 
+    </div>
+  </div>
+  <!-- END PAGE CONTENT--> 
+  
+</div>
+<script>
+
+</script> 

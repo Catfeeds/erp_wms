@@ -1,0 +1,100 @@
+<div class="container-fluid"> 
+  <!-- BEGIN PAGE HEADER-->
+  <div class="row-fluid">
+    <div class="span12"> 
+      <ul class="breadcrumb">
+        <li> <i class="icon-home"></i> <a>首页</a> <span class="icon-angle-right"></span> </li>
+        <li> <a href="#">我的商品</a> <span class="icon-angle-right"></span> </li>
+        <li><a href="#">导入商品</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- END PAGE HEADER--> 
+  <!-- BEGIN PAGE CONTENT-->
+   <div class="row-fluid">
+        <div class="span12">   
+          <!-- BEGIN VALIDATION STATES-->       
+          <div class="portlet box blue">
+            <div class="portlet-title">
+              <div class="caption"><i class="icon-reorder"></i>导入商品</div>
+            </div>
+            <div class="portlet-body form"> 
+              <!-- BEGIN FORM-->
+              <form action=""  class="form-horizontal" method="post"  id='form_11' enctype="multipart/form-data">
+                <div id='alert-error_1' class="alert alert-error hide">
+                  <button class="close" data-dismiss="alert"></button>
+                  <span>请上传商品</span>
+                </div>
+                <div id='alert-success_1' class="alert alert-success hide">
+                  <button class="close" data-dismiss="alert"></button>
+                  <span>通过正在提交......</span>
+                </div>
+                  
+                <div class="control-group">
+                  <label class="control-label">导入商品<span class="required">*</span></label>
+                  <div class="controls">
+                    <input type="file" name="import_product" data-required="1" class="span6 m-wrap"/>
+                  </div>
+                </div> 
+               
+                <div class="form-actions">
+                  <button type="submit" class="btn green">提交</button>
+                </div>
+              </form>
+              <!-- END FORM--> 
+            </div>
+          </div>
+          <!-- END VALIDATION STATES--> 
+        </div>
+      </div>
+  
+  <!-- END PAGE CONTENT--> 
+  
+</div>
+<script type="text/javascript" src="/static/js/jquery.validate.min.js?v=<{$vsersion}>"></script> 
+<script>
+function load_ini()
+{
+	$('#form_11').validate({
+		errorElement: 'span', //default input error message container
+		errorClass: 'help-inline', // default input error message class
+		focusInvalid: false, // do not focus the last invalid input
+		ignore: "",
+		rules: {
+			product: {
+				required: true
+			},
+		},
+		messages : {
+			  product:{
+				  required:'请上传商品',
+			  },
+		}
+		,
+		invalidHandler: function (event, validator) { //display error alert on form submit              
+			
+		},
+		highlight: function (element) { // hightlight error inputs
+			$(element)
+				.closest('.help-inline').removeClass('ok'); // display OK icon
+			$(element)
+				.closest('.control-group').removeClass('success').addClass('error'); // set error class to the control group
+		},
+	
+		unhighlight: function (element) { // revert the change dony by hightlight
+			$(element)
+				.closest('.control-group').removeClass('error'); // set error class to the control group
+		},
+	
+		success: function (label) {
+			label.addClass('valid').addClass('help-inline ok') // mark the current input as valid and display OK icon
+			.closest('.control-group').removeClass('error').addClass('success'); // set success class to the control group
+		} ,
+		 
+		submitHandler: function (form) {
+			form.submit();
+		}
+	});
+}
+
+</script> 

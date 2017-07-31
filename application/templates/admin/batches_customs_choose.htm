@@ -1,0 +1,249 @@
+<div class="container-fluid">
+<div class="row-fluid">
+  <div class="span12">
+    <div class="form"> 
+      <!-- BEGIN FORM-->
+      <form action="" id="form_batches_customs_choose" class="form-horizontal" method="post" >
+        <table class="table table-bordered table-hover dataTable" id="table_1">
+          <{*验证提示*}>
+          <div id='alert-error_1' class="alert alert-error hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>提交失败</span> </div>
+          <div id='alert-success_1' class="alert alert-success hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>提交成功</span> </div>
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">批次信息</th>
+            </tr>
+          </thead>
+          <tr>
+            <td width="250px">批次ID：<{$re.id}></td>
+            <td width="250px">批次名称：<{$re.batches_name}></td>
+            <td>会员ID：<{$re.userid}></td>
+          </tr>
+          <tr>
+            <td width="250px">
+              当前选择关区：                
+              <{if $re.customs==0}> 
+                <span class="btn red mini">未选择</span>
+              <{elseif $re.customs==1}> 
+                <span class="btn green mini">成都</span>
+              <{elseif $re.customs==2}> 
+                <span class="btn green mini">北京</span>
+              <{elseif $re.customs==3}> 
+                <span class="btn green mini">深圳</span>
+              <{elseif $re.customs==4}>
+                <span class="btn green mini">杭州</span>
+              <{elseif $re.customs==5}> 
+                <span class="btn green mini">上海</span>
+              <{/if}>
+            </td>
+            <td>
+              当前计税方式：
+              <{if $re.tax_type==0}> 
+                <span class="btn red mini">未选择</span>
+              <{elseif $re.tax_type==1}> 
+                <span class="btn green mini">行邮税</span>
+              <{elseif $re.tax_type==2}> 
+                <span class="btn green mini">综合税</span>
+              <{/if}>
+            </td>
+            <td>
+              当前运费模版：<{$re.freight_template}>|<{$re.freight_template_abroad}>
+            </td>
+          </tr>
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">选择关区</th>
+            </tr>
+          </thead>
+          <tr>
+            <td colspan="99"> 
+              <div class="control-group" style="margin:5px 0 5px 0;">
+                <label class="control-label">关区选择<span class="required">*</span></label>
+                <div class="controls"> 
+                  <select name="customs" id="sel_customs" aria-controls="sample_1"  class="form_2_select2 m-wrap span2">
+                    <option selected="selected" value="choose">修改关区</option>
+                    <option <{if $re.customs_type.filing_type==1}>selected="selected"<{/if}> value="1">成都</option>
+                    <option <{if $re.customs_type.filing_type==2}>selected="selected"<{/if}> value="2">北京</option>
+                    <option <{if $re.customs_type.filing_type==3}>selected="selected"<{/if}> value="3">深圳</option>
+                    <option <{if $re.customs_type.filing_type==4}>selected="selected"<{/if}> value="4">杭州</option>
+                    <option <{if $re.customs_type.filing_type==5}>selected="selected"<{/if}> value="5">上海</option>
+                  </select>
+                </div>
+              </div>  
+
+              <div class="control-group" style="margin:10px 0 5px 0;">
+                <label class="control-label">计税方式<span class="required">*</span></label>
+                <div class="controls">     
+                  <select name="tax_type" id="sel_tax_type" aria-controls="sample_1"  class="form_2_select2 m-wrap span2">
+                    <option selected="selected" value="choose">修改计税方式</option>
+                    <option <{if $re.customs_type.filing_kjt_type==1}>selected="selected"<{/if}> value="1">行邮税</option>
+                    <option <{if $re.customs_type.filing_kjt_type==2}>selected="selected"<{/if}> value="2">综合税</option>
+                  </select>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">选择运费模版</th>
+            </tr>
+          </thead>
+          <tr>
+            <td colspan="99">
+              <div class="control-group" style="margin:5px 0 5px 0;">
+                <label class="control-label">国内实际运费<span class="required">*</span></label>
+                <div class="controls">     
+                  <select name="freight_template" id="sel_template" aria-controls="sample_1" class="form_2_select2 m-wrap span2">
+                    <option value="choose">修改运费模版</option>
+                    <{foreach item = item from = $re.template}> 
+                      <option <{if $re.template_id==$item.id}>selected="selected"<{/if}> value="<{$item.id}>|<{$item.title}>"><{$item.title}></option>
+                    <{/foreach}>
+                  </select>
+                </div>
+              </div>
+
+              <div class="control-group" style="margin:10px 0 5px 0;">
+                <label class="control-label">商户运费模版<span class="required">*</span></label>
+                <div class="controls">     
+                  <select name="freight_template_abroad" id="sel_template_abroad" aria-controls="sample_1" class="form_2_select2 m-wrap span2">
+                    <option value="choose">修改运费模版</option>
+                    <{if !empty($re.template_abroad) }>
+                      <{foreach item = item from = $re.template_abroad}> 
+                        <option <{if $re.template_abroad_id==$item.id}>selected="selected"<{/if}> value="<{$item.id}>|<{$item.title}>"><{$item.title}></option>
+                      <{/foreach}>
+                    <{/if}>
+                  </select>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">计算结果</th>
+            </tr>
+          </thead>
+          <tr>
+            <td colspan="99"> 
+              <div class="control-group" style="margin:5px 0 5px 0;">
+                <label class="control-label">税款总金额<span class="required">*</span></label>
+                <div class="controls">
+                <input class="m-wrap small" type="text" name="tax_total" value="<{$re.tax_total}>" readonly="readonly"> 
+                </div>
+              </div>
+
+              <div class="control-group" style="margin:10px 0 5px 0;">
+                <label class="control-label">运费总金额<span class="required">*</span></label>
+                <div class="controls">
+                 <input class="m-wrap small" type="text" name="freight_total" value="<{$re.freight_total+$re.freight_total_abroad}>" readonly="readonly">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <input type="hidden" name="id" value="<{$re.id}>"/>
+        </table>
+        <div class="form-actions">
+          <!-- <button type="button" id='' class="btn green">计算结果</button> -->
+          <button type="button" id='submit_batches_customs_choose' class="btn red">确认提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="/static/js/jquery.validate.min.js?v=<{$vsersion}>"></script> 
+<script>
+
+function load_ini()
+{
+
+  modify_states();
+
+  freight_template_choose();
+  
+}
+
+var freight_template_choose = function()
+{
+  
+ 
+  $('#sel_template').change(function()
+  {
+    var freight_template = $("#sel_template option:selected").val();
+    var freight_template_abroad = $('#sel_template_abroad');
+    $.post('<{'batches/freight_template_choose'|site_url}>',
+    { 
+      freight_template:freight_template
+    },
+    function(msg)
+    { 
+      var sel = eval(msg);
+      freight_template_abroad.empty();
+      freight_template_abroad.append("<option value='choose'>修改运费模版</option>");
+      
+      for ( var i = 0 ; i < sel.length ; i++ )
+      {       
+        freight_template_abroad.append("<option value='"+sel[i].id+"|"+sel[i].title+"'>"+sel[i].title+"</option>");     
+      } 
+    });
+  });
+}
+
+var modify_states = function()
+{  
+  var error1=$('#alert-error_1'); 
+  var success1=$('#alert-success_1'); 
+  var form1 = $('#form_batches_customs_choose');
+  $("#submit_batches_customs_choose").click(function(){
+    if(form1.valid()==true)
+    {
+      $modal=$('#ajax-modal');
+      error1.hide();
+      success1.show();
+      success1.find('span').html('正在提交...........');
+      $('body').modalmanager('loading');
+      $.post('<{"batches/batches_customs_choose"|site_url}>',form1.serialize(),function(msg)
+      {
+        try
+        {
+          eval("var str="+msg);
+          //操作成功
+          if(str.type==1)
+          {
+            //错误提示
+            error1.show();
+            success1.hide();
+            error1.find('span').html(str.msg);
+          }
+          else if(str.type==2)
+          {
+            //提交成功
+            error1.hide();
+            success1.show();
+            success1.find('span').html('提交成功');
+            location.reload();
+          }
+          else if(str.type==3)
+          {
+            //刷新主页面
+            f_main_index();
+            return true;
+          }
+          setTimeout(modal_msg(str.msg),300);
+        }
+        catch(e)
+        {
+          $('body').modalmanager('removeLoading');
+          success1.hide();
+          error1.find('span').html('系统异常');
+          error1.show();
+
+          setTimeout(modal_msg('系统异常'),300);
+        };
+      });
+    }
+  }); 
+}
+
+</script>

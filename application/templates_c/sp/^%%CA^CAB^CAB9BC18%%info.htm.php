@@ -1,0 +1,30 @@
+<?php /* Smarty version 2.6.20, created on 2016-12-21 15:15:20
+         compiled from info.htm */ ?>
+<div class="container-fluid"> 
+  
+  <!-- BEGIN PAGE HEADER-->
+  
+  <div class="row-fluid">
+    <div class="span12">
+    <h3 class="page-title"> <small> </small> </h3>
+      <ul class="breadcrumb">
+        <li> <i class="icon-home"></i> <a href="#">首页</a> </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- END PAGE HEADER--> 
+  
+  <!-- BEGIN PAGE CONTENT-->
+  <div class="row-fluid">
+    <div class="span12"> 
+      <!-- BEGIN VALIDATION STATES-->
+      <div class="row-fluid">
+         <span> 使用指南: 1.产品备案  -》2.订单按批次上传-》平台按批次审核-》用户打印国内面单-》如果是fedx需要把小包裹再次打包到大包裹中-》系统推送fedex获取主单和分单-》通知fedex拿货</span>
+      </div>
+      <!-- END VALIDATION STATES--> 
+    </div>
+  </div>
+  <!-- END PAGE CONTENT--> 
+  
+</div>

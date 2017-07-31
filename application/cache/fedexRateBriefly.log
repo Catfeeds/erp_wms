@@ -1,0 +1,184 @@
+====================SUCCESS====================
+Date:2017-05-17 14:58:23
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================SUCCESS====================
+Date:2017-05-17 15:56:39
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================WARNING====================
+Date:2017-05-17 17:04:12
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================WARNING====================
+Date:2017-05-17 17:05:37
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================WARNING====================
+Date:2017-05-17 17:10:59
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================WARNING====================
+Date:2017-05-17 17:12:46
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================WARNING====================
+Date:2017-05-17 17:14:59
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================WARNING====================
+Date:2017-05-17 17:21:17
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================ERROR====================
+Date:2017-05-17 17:56:01
+Transaction:Error
+Severity:ERROR
+Source:crs
+Code:851
+Message:Package 1 - FEDEX_PAK cannot exceed the limit of 9.00 KG.
+LocalizedMessage:Package 1 - FEDEX_PAK cannot exceed the limit of 9.00 KG.
+====================SUCCESS====================
+Date:2017-05-17 17:57:25
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================WARNING====================
+Date:2017-05-18 09:14:24
+Transaction:Warning
+Severity:WARNING
+Source:crs
+Code:556
+Message:There are no valid services available. 
+LocalizedMessage:There are no valid services available. 
+====================ERROR====================
+Date:2017-05-18 09:15:44
+Transaction:Error
+Severity:ERROR
+Source:crs
+Code:851
+Message:Package 1 - FEDEX_ENVELOPE cannot exceed the limit of 0.22 KG.
+LocalizedMessage:Package 1 - FEDEX_ENVELOPE cannot exceed the limit of 0.22 KG.
+====================SUCCESS====================
+Date:2017-05-18 09:21:07
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================ERROR====================
+Date:2017-05-18 09:50:10
+Transaction:Error
+Severity:ERROR
+Source:crs
+Code:851
+Message:Package 1 - FEDEX_BOX cannot exceed the limit of 18.00 KG.
+LocalizedMessage:Package 1 - FEDEX_BOX cannot exceed the limit of 18.00 KG.
+====================SUCCESS====================
+Date:2017-05-18 09:50:49
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================SUCCESS====================
+Date:2017-05-18 09:53:19
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================ERROR====================
+Date:2017-05-18 10:05:14
+Transaction:Error
+Severity:ERROR
+Source:crs
+Code:851
+Message:Package 1 - FEDEX_TUBE cannot exceed the limit of 9.00 KG.
+LocalizedMessage:Package 1 - FEDEX_TUBE cannot exceed the limit of 9.00 KG.
+====================SUCCESS====================
+Date:2017-05-18 11:01:01
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================SUCCESS====================
+Date:2017-05-18 11:05:54
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================SUCCESS====================
+Date:2017-05-18 13:05:25
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================ERROR====================
+Date:2017-05-18 17:08:22
+Transaction:Error
+Severity:ERROR
+Source:crs
+Code:701
+Message:Packaging type missing or invalid .
+LocalizedMessage:Packaging type missing or invalid .
+====================SUCCESS====================
+Date:2017-05-18 17:26:06
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 
+====================SUCCESS====================
+Date:2017-05-19 17:45:31
+Transaction:Successful
+Severity:SUCCESS
+Source:crs
+Code:0
+Message:Request was successfully processed. 
+LocalizedMessage:Request was successfully processed. 

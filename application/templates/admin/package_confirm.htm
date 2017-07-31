@@ -1,0 +1,428 @@
+<div class="container-fluid">
+<div class="row-fluid">
+  <div class="span12">
+    <div class="form"> 
+      <!-- BEGIN FORM-->
+        <table class="table table-bordered table-hover dataTable" id="table_1">
+          <{*验证提示*}>
+          <div id='alert-error_1' class="alert alert-error hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>提交失败</span>
+          </div>
+          <div id='alert-success_1' class="alert alert-success hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>提交成功</span>
+          </div>
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">批次【<{$re.batches_id}>】订单信息</th>
+            </tr>
+          </thead>
+          <tr>
+            <th width="250px">订单总数：<{$re.order_num}></th>
+            <th width="250px">未加入包裹数量：<{$re.not_add_package_num}></th>
+            <th>已加入包裹数量：<{$re.add_package_num}></th>
+          </tr>
+    
+          <thead>
+            <tr>
+              <th bgcolor="#E2EEFE" colspan="99">包裹信息</th>
+            </tr>
+          </thead>
+        </table>
+        <div  id="product_all">
+        <form id='form_product_select' action="" method="post">
+          <table class="table table-striped table-bordered table-hover dataTable" id='table_1' >
+            <thead>
+              <tr role="heading">
+                <th width="20"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">
+                  <input value="0" type="checkbox" class="group-checkable list-checkable"  data-set='#product_all .list-checkable'/>
+                </th>
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">操作</th>  
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">包裹ID</th>
+                <th width="100" class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">包裹状态</th>
+                <th width="100" class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">下载面单</th>
+                <th width="100" class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">fedex主单号</th>
+                <th width="100" class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">fedex分单号</th>
+                <th width="90"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">
+                  <select style='width:92px;margin:0;' name="package_request_status" id="sel_package_request_status" data-batches="<{$re.batches_id}>" >
+                    <option value="all">对接状态</option>
+                    <{foreach key = key item = item from = $re.package_request_status}>
+                      <option value=<{$key}> ><{$item}></option>
+                    <{/foreach}>
+                  </select>
+                </th>
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">投递状态</th>
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">重量</th>
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">长</th>
+                <th width="80"  class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">高</th>
+                <th width="*"   class="sorting_disabled" role="columnheader" tabindex="0" aria-controls="sample_1">宽</th>                           
+              </tr>
+            </thead>
+            <tbody role="alert" aria-live="polite" aria-relevant="all" id="table_package_list">
+            <{if $re.package_list}>
+              <{foreach item = item from = $re.package_list}>
+                <tr>
+                  <{if !$item.fedex_index}>
+                  <td>
+                     <input type="checkbox" name="<{$item.id}>" value="<{$item.batches_id}>" class="list-checkable" /></td>
+                  <td>
+
+                    <a href="#"  data_id="<{$item.id}>"  class="btn green mini index">获取主单</a>
+                    <{else}>
+                    <td></td>
+                    <td>
+                      <a href="#"  class="btn red mini delete" data_id="<{$item.id}>" batch_id="<{$item.batches_id}>">删除主单</a>
+                    </td>
+
+                    <{/if}>
+                  </td>
+                  <td><{$item.id}></td>                              
+                  <td>
+                    <{if $item.status==1}>
+                      <span class="btn red mini">未确认</span>
+                    <{elseif $item.status==2}>
+                      <span class="btn blue mini">已确认待审核</span>
+                    <{elseif $item.status==3}>
+                      <span class="btn green mini">审核通过</span>
+                    <{/if}>
+                  </td>
+
+                  <td>
+                    <{if $item.package_request_status==6}>
+                       <a target="_blank" href="/fedex/<{$item.fedex_index}>__shiplabel.pdf"">下载面单</a>
+                    <{else}>
+                     暂无面单
+                    <{/if}>
+                  </td>
+                  <td><{$item.fedex_index}></td>
+                  <td><{$item.fedex_index_sqnumber}></td>
+                  <td>
+                    <{foreach key = k item = i from = $re.package_request_status }>
+                      <{if $item.package_request_status == $k}><{$i}><{/if}>
+                    <{/foreach}>
+                  </td>
+                  <td></td>
+                  <td><{$item.fedex_weight}><{$item.fedex_weight_unit}></td>
+                  <td><{$item.fedex_length}><{$item.fedex_lwh_unit}></td>
+                  <td><{$item.fedex_height}><{$item.fedex_lwh_unit}></td>
+                  <td><{$item.fedex_width}><{$item.fedex_lwh_unit}></td>        
+                </tr>
+              <{/foreach}>
+            <{else}>
+              <tr>
+                <td colspan="99">暂时无数据</td>
+              </tr>
+            <{/if}>
+            </tbody>
+          </table>
+          <div class="row-fluid" style="margin-top:20px;">
+            <div class="input-append">
+              <input value="0" type="checkbox" class="group-checkable list-checkable"  data-set='#product_all .list-checkable' />
+            </div>
+            <div class="input-append">
+              <select name="main_index" id="main_index" class="input-medium"  data_batch_num="<{$item.batches_id}>" >
+                <option value="">请选择主单包裹</option>
+                <{foreach item = item from = $re.package_list}>
+                <{if $item.fedex_index !=0}>
+                <option value="<{$item.fedex_index}>"><{$item.fedex_index}></option>
+                <{/if}>
+                <{/foreach}>
+              </select>
+            </div>
+            <div class="input-append">
+              <!--<button type="button" class="btn green mini">获取分单</button>-->
+            </div>
+            <div class="input-append" style="margin-left:10px;">
+              <button type="button" class="btn green mini" id="fedex_validate">提交验证</button>
+            </div>
+            <div class="input-append" style="margin-left:10px;">
+              <button type="button" class="btn green mini" id="fedex_confirm">包裹确认</button>
+            </div>
+            <div class="clear"></div>
+            <div class="span6">
+              <div class="dataTables_paginate paging_bootstrap pagination"> <{$re.page}> </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="/static/js/jquery.validate.min.js?v=<{$vsersion}>"></script> 
+<script>
+
+function load_ini()
+{
+
+  modify_states();
+
+  sel_change_search();
+  var error1=$('#alert-error_1');
+  var success1=$('#alert-success_1');
+  $('#table_package_list .index').click(function(){
+      var id=$(this).attr('data_id');
+     //location.href='<{"package/get_fedex_index"|site_url}>?id='+id;
+      $('body').modalmanager('loading');
+      $.post('<{"package/get_fedex_index"|site_url}>?id='+id,function(msg){
+        try
+        {
+          eval("var str="+msg);
+          //操作成功
+          if(str.type==1)
+          {
+            //错误提示
+            $('body').modalmanager('removeLoading');
+            error1.show();
+            success1.hide();
+            error1.find('span').html(str.msg);
+          }
+          else if(str.type==2)
+          {
+            //错误提示
+            $('body').modalmanager('removeLoading');
+            error1.show();
+            success1.hide();
+            error1.find('span').html(str.msg);
+          }
+          else if(str.type==3)
+          {
+            //刷新主页面
+            window.location='';
+            return true;
+          }
+
+          setTimeout(modal_msg(str.msg),300);
+        }catch(e){
+          $('body').modalmanager('removeLoading');
+          success1.hide();
+          error1.find('span').html('系统异常');
+          error1.show();
+          setTimeout(modal_msg('系统异常'),300);
+        };
+      });
+
+  });
+
+  $('#fedex_validate').click(function(){
+    var main_index =$('#main_index').val();
+    var batch_num =$('#main_index').attr('data_batch_num');
+    //location.href='<{"package/fedex_validate"|site_url}>?index='+main_index+'&batch_num='+batch_num;
+    $('body').modalmanager('loading');
+    $.post('<{"package/fedex_validate"|site_url}>?index='+main_index+'&batch_num='+batch_num,function(msg){
+      try
+      {
+        eval("var str="+msg);
+        //操作成功
+        if(str.type==1)
+        {
+          //错误提示
+          $('body').modalmanager('removeLoading');
+          error1.show();
+          success1.hide();
+          error1.find('span').html(str.msg);
+        }
+        else if(str.type==2)
+        {
+          //错误提示
+          $('body').modalmanager('removeLoading');
+          error1.show();
+          success1.hide();
+          error1.find('span').html(str.msg);
+        }
+        else if(str.type==3)
+        {
+          //刷新主页面
+          window.location='';
+          return true;
+        }
+
+        setTimeout(function(){
+          $modal.load('<{"seller/seller_msg"|site_url}>?msg='+encodeURI(str.msg),'', function(){
+            $modal.modal();
+          });
+        }, 300);
+      }catch(e){
+        alert(msg);
+        $('body').modalmanager('removeLoading');
+        success1.hide();
+        error1.find('span').html('系统异常');
+        error1.show();
+      };
+    });
+
+  });
+
+
+  $('#fedex_confirm').click(function(){
+    var main_index =$('#main_index').val();
+    var batch_num =$('#main_index').attr('data_batch_num');
+    //location.href='<{"package/fedex_confirm"|site_url}>?index='+main_index+'&batch_num='+batch_num;
+    $('body').modalmanager('loading');
+    $.post('<{"package/fedex_confirm"|site_url}>?index='+main_index+'&batch_num='+batch_num,function(msg){
+      try
+      {
+        eval("var str="+msg);
+        //操作成功
+        if(str.type==1)
+        {
+          //错误提示
+          $('body').modalmanager('removeLoading');
+          error1.show();
+          success1.hide();
+          error1.find('span').html(str.msg);
+        }
+        else if(str.type==2)
+        {
+          //错误提示
+          $('body').modalmanager('removeLoading');
+          error1.show();
+          success1.hide();
+          error1.find('span').html(str.msg);
+        }
+        else if(str.type==3)
+        {
+          //刷新主页面
+          window.location='';
+          return true;
+        }
+
+        setTimeout(function(){
+          $modal.load('<{"seller/seller_msg"|site_url}>?msg='+encodeURI(str.msg),'', function(){
+            $modal.modal();
+          });
+        }, 300);
+      }catch(e){
+        alert(msg);
+        $('body').modalmanager('removeLoading');
+        success1.hide();
+        error1.find('span').html('系统异常');
+        error1.show();
+      };
+    });
+
+  });
+
+  $('#table_package_list .delete').click(function(){
+    var id=$(this).attr('data_id');
+    var batch_id = $(this).attr('batch_id');
+    //location.href='<{"package/fedex_delete"|site_url}>?id='+id+'&batch_id='+batch_id;
+    $('body').modalmanager('loading');
+    $.post('<{"package/fedex_delete"|site_url}>?id='+id,function(msg){
+      try
+      {
+        eval("var str="+msg);
+        //操作成功
+        if(str.type==1)
+        {
+          //错误提示
+          $('body').modalmanager('removeLoading');
+          error1.show();
+          success1.hide();
+          error1.find('span').html(str.msg);
+        }
+
+        else if(str.type==3)
+        {
+          //刷新主页面
+          window.location='';
+          return true;
+        }
+
+        setTimeout(function(){
+          $modal.load('<{"seller/seller_msg"|site_url}>?msg='+encodeURI(str.msg),'', function(){
+            $modal.modal();
+          });
+        }, 300);
+      }catch(e){
+        alert(msg);
+        $('body').modalmanager('removeLoading');
+        success1.hide();
+        error1.find('span').html('系统异常');
+        error1.show();
+      };
+    });
+
+  });
+
+
+  jQuery('.group-checkable').change(function () {
+    var set = jQuery(this).attr("data-set");
+    var checked = jQuery(this).is(":checked");
+    jQuery(set).each(function () {
+      if (checked) {
+        $(this).attr("checked", true);
+      } else {
+        $(this).attr("checked", false);
+      }
+    });
+    jQuery.uniform.update(set);
+  });
+
+}
+
+var modify_states = function()
+{  
+  var error1=$('#alert-error_1'); 
+  var success1=$('#alert-success_1'); 
+  var form1 = $('#form_batches_eidt');
+  $("#submit_batches_eidt").click(function(){
+    if(form1.valid()==true)
+    {
+      $modal=$('#ajax-modal');
+      error1.hide();
+      success1.show();
+      success1.find('span').html('正在提交...........');
+      $('body').modalmanager('loading');
+      $.post('<{"batches/batches_edit"|site_url}>',form1.serialize(),function(msg)
+      {
+        try
+        {
+          eval("var str="+msg);
+          //操作成功
+          if(str.type==1)
+          {
+            //错误提示
+            error1.show();
+            success1.hide();
+            error1.find('span').html(str.msg);
+          }
+          else if(str.type==2)
+          {
+            //提交成功
+            error1.hide();
+            success1.show();
+            success1.find('span').html('提交成功');
+            location.reload();
+          }
+          else if(str.type==3)
+          {
+            //刷新主页面
+            f_main_index();
+            return true;
+          }
+          setTimeout(function()
+          {
+            $modal.load('<{"admin_index/admin_msg"|site_url}>?msg='+encodeURI(str.msg),'', function()
+            {
+              $modal.modal();
+            });
+          }, 300);
+        }
+        catch(e)
+        { 
+          $('body').modalmanager('removeLoading');
+          success1.hide();
+          error1.find('span').html('系统异常');
+          error1.show();
+        };
+      });
+    }
+  }); 
+}
+
+var sel_change_search = function()
+{
+
+}
+</script>

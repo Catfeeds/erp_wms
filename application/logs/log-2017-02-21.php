@@ -1,0 +1,3 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2017-02-21 13:57:54 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283---Unknown column 'huoyunzhan_id' in 'field list' - Invalid query: INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_addr_id`, `end_addr_id`, `payor_id`, `dutiesPayment_id`, `huoyunzhan_id`, `filing_type`, `filing_kjt_type`, `addtime`) VALUES ('jjjjjj', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', '11223', '13215454132', 'shanghai', '2', '货运站', '1', '4', '6', '4', '', '1', '1', '17-02-21 01:57:54')

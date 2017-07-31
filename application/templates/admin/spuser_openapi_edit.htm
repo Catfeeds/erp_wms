@@ -1,0 +1,219 @@
+<div class="container-fluid"> 
+  
+  <!-- BEGIN PAGE CONTENT-->
+  
+  <div class="row-fluid">
+        <div class="span12"> 
+          
+          <!-- BEGIN VALIDATION STATES-->
+          
+          <div class="portlet box blue">
+            <div class="portlet-body form"> 
+              <!-- BEGIN FORM-->
+              <form action="" id="form_spuser_openapi" class="form-horizontal" method="post" >               
+                
+                <{*验证提示*}>
+                <div id='alert-error_1' class="alert alert-error hide">
+                  <button class="close" data-dismiss="alert"></button>
+                  <span>提交失败</span>
+                </div>
+                <div id='alert-success_1' class="alert alert-success hide">
+                  <button class="close" data-dismiss="alert"></button>
+                  <span>提交成功</span>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">API_ID<span class="required">*</span></label>
+                  <div class="controls">
+                    <label class="control-label" style="text-align:left;"><{$sp.api_id}></label>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">UID<span class="required">*</span></label>
+                  <div class="controls">
+                    <label class="control-label" style="text-align:left;"><{$sp.userid}></label>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">自动同步产品<span class="required">*</span></label>
+                    <div class="controls"> 
+                      <select size="1" id="form_2_select2"  name="get_product_desc_status" aria-controls="sample_1" class="form_2_select2 m-wrap small">
+                        <option value='1'>开启</option>
+                        <option value='0' <{if $sp.get_product_desc_status==0}>selected="selected"<{/if}> >关闭</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">自动同步库存<span class="required">*</span></label>
+                    <div class="controls"> 
+                      <select size="1" id="form_2_select2"  name="get_product_num_status" aria-controls="sample_1" class="form_2_select2 m-wrap small">
+                        <option value='1'>开启</option>
+                        <option value='0' <{if $sp.get_product_num_status==0}>selected="selected"<{/if}> >关闭</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">自动同步订单<span class="required">*</span></label>
+                    <div class="controls"> 
+                      <select size="1" id="form_2_select2"  name="get_order_status" aria-controls="sample_1" class="form_2_select2 m-wrap small">
+                        <option value='1'>开启</option>
+                        <option value='0' <{if $sp.get_order_status==0}>selected="selected"<{/if}> >关闭</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">自动推送订单<span class="required">*</span></label>
+                    <div class="controls"> 
+                      <select size="1" id="form_2_select2"  name="send_order_status" aria-controls="sample_1" class="form_2_select2 m-wrap small">
+                        <option value='1'>开启</option>
+                        <option value='0' <{if $sp.send_order_status==0}>selected="selected"<{/if}> >关闭</option>
+                      </select>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                  <input type="hidden" name="id" value="<{$sp.id}>"> 
+                  <input type="hidden" name="<{$csrf.name}>" value="<{$csrf.hash}>">        
+                  <button type="submit" id='submit_spuser_openapi' class="btn green">提交</button>
+                </div>
+              </form>
+              <!-- END FORM--> 
+            </div>
+          </div>
+          <!-- END VALIDATION STATES--> 
+        </div>
+      </div>
+  
+  <!-- END PAGE CONTENT--> 
+  
+</div>
+
+<script type="text/javascript" src="/static/js/jquery.validate.min.js?v=<{$vsersion}>"></script> 
+<script>
+
+function load_ini()
+{
+  var error1=$('#alert-error_1'); 
+  var success1=$('#alert-success_1'); 
+  
+  var form1 = $('#form_spuser_openapi');
+  form1.validate({
+    errorElement: 'span', //default input error message container
+    errorClass: 'help-inline', // default input error message class
+    focusInvalid: false, // do not focus the last invalid input
+    ignore: "",
+    rules: {
+      ps_name: {
+        required: true
+      }
+      ,
+      ps_user: {
+        required: true
+      }
+    },
+    messages : {
+      ps_name:{
+         required:'账号不能为空',
+       }
+      ,
+      ps_user: {
+        required: '登陆账号不能为空'
+      }
+    }
+    ,
+    invalidHandler: function (event, validator) { //display error alert on form submit              
+       success1.hide();
+        error1.find('span').html('请完善提交内容再提交');
+        error1.show();
+        App.scrollTo(error1, -200);
+    },
+  
+    highlight: function (element) { // hightlight error inputs
+      $(element)
+        .closest('.help-inline').removeClass('ok'); // display OK icon
+      $(element)
+        .closest('.control-group').removeClass('success').addClass('error'); // set error class to the control group
+    },
+  
+    unhighlight: function (element) { // revert the change dony by hightlight
+      $(element)
+        .closest('.control-group').removeClass('error'); // set error class to the control group
+    },
+  
+    success: function (label) {
+      label.addClass('valid').addClass('help-inline ok') // mark the current input as valid and display OK icon
+      .closest('.control-group').removeClass('error').addClass('success'); // set success class to the control group
+    },
+    submitHandler: function (form) {
+      /*
+      $.post("?m=<{$smarty.get.m}>&s=<{$smarty.get.s}>&act_ajax=1",form1.serialize(),function(msg){
+          success1.hide();
+          if(msg==1)
+          {
+            success1.find('span').html('订阅成功');
+            success1.show();  
+          }
+          else
+          {
+            error1.find('span').html(msg);
+            error1.show();
+          }
+      });
+      */
+    }
+  });
+  
+  $("#submit_spuser_openapi").click(function(){
+    if(form1.valid()==true)
+    {
+      //encodeURI(msg)
+      $modal=$('#ajax-modal');
+      error1.hide();
+      success1.show();
+      success1.find('span').html('正在提交...........');
+      $('body').modalmanager('loading');
+      $.post('<{"spuser/spuser_openapi"|site_url}>',form1.serialize(),function(msg){
+        try
+        {
+          eval("var str="+msg);
+          //操作成功
+          if(str.type==1)
+          {
+            //错误提示
+            error1.show();
+            success1.hide();
+            error1.find('span').html(str.msg);
+          }
+          else if(str.type==2)
+          {
+            //提交成功
+            error1.hide();
+            success1.show();
+            success1.find('span').html('提交成功');
+          }
+          else if(str.type==3)
+          {
+            //刷新主页面
+            f_main_index();
+            return true;
+          }
+          setTimeout(modal_msg(str.msg),300);
+        }catch(e){ 
+          $('body').modalmanager('removeLoading');
+          success1.hide();
+          error1.find('span').html('系统异常');
+          error1.show();
+          setTimeout(modal_msg('系统异常'),300);
+          };
+      });
+    }
+  });
+ 
+}
+
+</script>   

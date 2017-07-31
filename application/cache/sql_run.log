@@ -1,0 +1,652 @@
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [3]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [5]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [3]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [5]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [3]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [5]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [3]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [5]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [6]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [7]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [8]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [9]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+
+ [10]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [6]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [7]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [8]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [9]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+
+ [10]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [6]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [7]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [8]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [9]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+
+ [10]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', 'dsad', '100')
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [4]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', '121', '12')
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [6]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', '好吃', '100')
+
+ [7]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [8]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', '食用', '15')
+
+ [9]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+
+ [10]INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', 'DAS ', '100')
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000014'
+
+ [2]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000013'
+
+ [3]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000010'
+
+ [4]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000011'
+
+ [5]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`WHERE `upload_num` = 'u10000012'
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product`
+
+ [2]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [4]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15, 15
+
+ [2]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [3]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 30, 15
+
+ [2]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [3]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/sproduct_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT *FROM `dferp_sp_product`ORDER BY `id` DESC LIMIT 15
+
+ [2]SELECT `id`, `cat`FROM `dferp_stock_cat`
+
+ [3]SELECT `c_id`, `c_name`FROM `dferp_country`WHERE `c_display` =0
+admin=======url[Supplier/synchronize_product]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/index]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/index]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Admin_index/info]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+admin=======url[Supplier/supplier_list]----
+
+ [0]select  `group_id`  from  dferp_admin  where id='1'
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_sp_user`
+
+ [2]SELECT *FROM `dferp_sp_user`ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [4]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [5]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [6]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [7]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [8]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [9]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [10]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [11]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [12]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [13]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [14]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [15]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [16]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [17]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [18]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [19]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [20]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [21]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [22]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [23]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [24]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [25]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [26]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [27]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [28]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [29]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [30]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [31]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [32]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [33]SELECT `companyName` FROM  dferp_fedex_user WHERE id=12
+
+ [34]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [35]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [36]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [37]SELECT `companyName` FROM  dferp_fedex_user WHERE id=5
+
+ [38]SELECT `companyName` FROM  dferp_fedex_user WHERE id=4
+
+ [39]SELECT `companyName` FROM  dferp_fedex_user WHERE id=4
+
+ [40]SELECT `companyName` FROM  dferp_fedex_user WHERE id=6
+
+ [41]SELECT `companyName` FROM  dferp_fedex_user WHERE id=1
+
+ [42]SELECT `companyName` FROM  dferp_fedex_user WHERE id=4
+
+ [43]SELECT `companyName` FROM  dferp_fedex_user WHERE id=4
+
+ [44]SELECT `companyName` FROM  dferp_fedex_user WHERE id=6
+
+ [45]SELECT `companyName` FROM  dferp_fedex_user WHERE id=11
+
+ [46]SELECT `companyName` FROM  dferp_fedex_user WHERE id=13
+
+ [47]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [48]SELECT `companyName` FROM  dferp_fedex_user WHERE id=14
+
+ [49]SELECT `companyName` FROM  dferp_fedex_user WHERE id=5
+
+ [50]SELECT `companyName` FROM  dferp_fedex_user WHERE id=9
+
+ [51]SELECT `companyName` FROM  dferp_fedex_user WHERE id=10
+
+ [52]SELECT `companyName` FROM  dferp_fedex_user WHERE id=6
+sp=======url[User/login]----
+
+ [0]select   addr_id,filing_type,filing_kjt_type  from  dferp_sp_user   where   id=''  
+
+ [1]select  `user`,`id`  from  dferp_sp_user  where id='17'
+sp=======url[Sp_index/index]----
+
+ [0]select   addr_id,filing_type,filing_kjt_type  from  dferp_sp_user   where   id='17'  
+sp=======url[Order/order_list]----
+
+ [0]select   addr_id,filing_type,filing_kjt_type  from  dferp_sp_user   where   id='17'  
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_order`WHERE `status` != -1AND `userid` = '17'
+
+ [2]SELECT *FROM `dferp_order`WHERE `status` != -1AND `userid` = '17'ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT *FROM `dferp_order_list`WHERE `order_id` = '38'
+
+ [4]SELECT *FROM `dferp_order_list`WHERE `order_id` = '37'
+
+ [5]SELECT *FROM `dferp_order_list`WHERE `order_id` = '36'
+
+ [6]SELECT *FROM `dferp_order_list`WHERE `order_id` = '35'
+
+ [7]SELECT *FROM `dferp_order_list`WHERE `order_id` = '34'
+
+ [8]SELECT *FROM `dferp_order_list`WHERE `order_id` = '33'
+
+ [9]SELECT *FROM `dferp_order_list`WHERE `order_id` = '32'
+
+ [10]SELECT *FROM `dferp_order_list`WHERE `order_id` = '31'
+
+ [11]SELECT *FROM `dferp_order_list`WHERE `order_id` = '30'
+
+ [12]SELECT *FROM `dferp_order_list`WHERE `order_id` = '29'
+
+ [13]SELECT *FROM `dferp_order_list`WHERE `order_id` = '28'
+
+ [14]SELECT *FROM `dferp_order_list`WHERE `order_id` = '27'
+
+ [15]SELECT *FROM `dferp_order_list`WHERE `order_id` = '26'
+
+ [16]SELECT *FROM `dferp_order_list`WHERE `order_id` = '25'
+
+ [17]SELECT *FROM `dferp_order_list`WHERE `order_id` = '24'
+sp=======url[Order/order_list]----
+
+ [0]select   addr_id,filing_type,filing_kjt_type  from  dferp_sp_user   where   id='17'  
+
+ [1]SELECT COUNT(*) AS `numrows`FROM `dferp_order`WHERE `status` != -1AND `userid` = '17'
+
+ [2]SELECT *FROM `dferp_order`WHERE `status` != -1AND `userid` = '17'ORDER BY `id` DESC LIMIT 15
+
+ [3]SELECT *FROM `dferp_order_list`WHERE `order_id` = '38'
+
+ [4]SELECT *FROM `dferp_order_list`WHERE `order_id` = '37'
+
+ [5]SELECT *FROM `dferp_order_list`WHERE `order_id` = '36'
+
+ [6]SELECT *FROM `dferp_order_list`WHERE `order_id` = '35'
+
+ [7]SELECT *FROM `dferp_order_list`WHERE `order_id` = '34'
+
+ [8]SELECT *FROM `dferp_order_list`WHERE `order_id` = '33'
+
+ [9]SELECT *FROM `dferp_order_list`WHERE `order_id` = '32'
+
+ [10]SELECT *FROM `dferp_order_list`WHERE `order_id` = '31'
+
+ [11]SELECT *FROM `dferp_order_list`WHERE `order_id` = '30'
+
+ [12]SELECT *FROM `dferp_order_list`WHERE `order_id` = '29'
+
+ [13]SELECT *FROM `dferp_order_list`WHERE `order_id` = '28'
+
+ [14]SELECT *FROM `dferp_order_list`WHERE `order_id` = '27'
+
+ [15]SELECT *FROM `dferp_order_list`WHERE `order_id` = '26'
+
+ [16]SELECT *FROM `dferp_order_list`WHERE `order_id` = '25'
+
+ [17]SELECT *FROM `dferp_order_list`WHERE `order_id` = '24'

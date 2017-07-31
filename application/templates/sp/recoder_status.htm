@@ -1,0 +1,103 @@
+<div class="modal-header" style="height:30px; background:#000;">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:#FFF; height:1em; line-height:1em; width:1em;">x</button>
+    <h4 style="color:#fff; margin-top:5px;">
+        预计备案完成时间
+    </h4>
+</div>
+<div class="modal-body">
+    <div class="tabbable tabbable-custom">
+        <div class="tab-content">
+            <div class="container-fluid">
+                <!-- BEGIN PAGE CONTENT-->
+                    <!-- BEGIN FORM-->
+                    <div class="row-fluid">
+                        <form action="" id='form_recoder' method="post">
+                                <div class="control-group">
+                                            <{foreach from = $re.recoder_status key=key item= item}>
+                                            <{assign var="a"  value="$item"|explode:"|"}>
+
+                                             <label class="radio" >
+                                                 <input type="radio" name="recoder_status" value="<{$key}>|<{$a[0]}>">
+                                                 <{$a[1]}>
+                                             </label>
+
+
+                                            <{/foreach}>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                    <!-- END FORM-->
+                </div>
+                <!-- END PAGE CONTENT-->
+            </div>
+
+        </div>
+
+<div class="modal-footer">
+    <button type="button" data-dismiss="modal" id="sub_re" class="btn green" >提交</button>
+    <button type="button" data-dismiss="modal" class="btn">Close</button>
+</div>
+<script>
+    $('#sub_re').click(function(){
+        var $modal = $('#ajax-modal');
+        $('body').modalmanager('loading');
+        $.fn.modal.defaults.width='';
+        $.fn.modal.defaults.height='';
+        var recorder_status= $('#form_recoder').serialize();
+        var product = $('#form_product_list').serialize();
+        var c = recorder_status+'&'+product;
+        $.post("<{'product/product_checkbox'|site_url}>?type=1", c ,function(msg){
+            try
+            {
+
+                eval("var str="+msg);
+                if(str.type==1)
+                {
+
+                }
+                else if(str.type==2)
+                {
+
+                }
+                else if(str.type==3)
+                {
+                    //location.reload();
+                }
+				
+			   setTimeout(function(){
+				 modal_msg(str.msg);
+			   }, 300);
+			   
+				/*
+                setTimeout(function(){
+                    $modal.load('<{"sp_index/sp_msg"|site_url}>?msg='+encodeURI(str.msg),'', function()
+                    {
+                        $modal.modal();
+                    });
+                },300);
+				*/
+				
+            }
+            catch(e)
+            {
+                $('body').modalmanager('removeLoading');
+				
+				setTimeout(function(){
+					modal_msg('系统异常');
+			    }, 300);
+				
+				/*
+                setTimeout(function(){
+                    $modal.load('<{"sp_index/sp_msg"|site_url}>?msg='+encodeURI('系统异常'),'', function()
+                    {
+                        $modal.modal();
+                    });
+                },1000);
+				*/
+            };
+        });
+    })
+
+</script>
+

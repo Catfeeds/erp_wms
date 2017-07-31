@@ -1,0 +1,87 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2016-12-14 11:53:45 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 11:54:05 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:54:05 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:54:08 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 11:54:25 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 11:54:48 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:54:48 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:54:52 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 11:55:11 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 11:58:21 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:58:21 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 11:58:24 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 12:02:37 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:02:37 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:02:40 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 12:03:24 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 12:03:48 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:03:48 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:03:53 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 12:04:11 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:04:11 --> Severity: Parsing Error --> syntax error, unexpected T_OBJECT_OPERATOR, expecting T_STRING or T_VARIABLE or '{' or '$' D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 12:05:56 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 12:06:02 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php 578
+ERROR - 2016-12-14 13:16:12 --> 404 Page Not Found: admin/Test/index
+ERROR - 2016-12-14 13:16:25 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 8
+ERROR - 2016-12-14 13:16:52 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 8
+ERROR - 2016-12-14 13:16:54 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 8
+ERROR - 2016-12-14 13:20:47 --> 404 Page Not Found: admin/Test/test
+ERROR - 2016-12-14 13:21:35 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 15
+ERROR - 2016-12-14 13:22:34 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 18
+ERROR - 2016-12-14 13:22:37 --> Severity: Error --> Call to a member function get_sproduct_addr_all() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 18
+ERROR - 2016-12-14 13:24:02 --> Severity: Error --> Call to undefined method Base_Supplier_model::get_fedex_user() D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 18
+ERROR - 2016-12-14 13:25:05 --> Severity: Error --> Call to undefined method Base_Supplier_model::get_fedex_user() D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 18
+ERROR - 2016-12-14 13:25:48 --> Severity: Error --> Call to a member function get_fedex_user() on a non-object D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 18
+ERROR - 2016-12-14 13:26:01 --> Severity: Error --> Call to undefined function where() D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 247
+ERROR - 2016-12-14 13:26:56 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 248---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1
+WHERE `type` = 1' at line 2 - Invalid query: SELECT *
+FROM `dferp_fedex_user`, 1
+WHERE `type` = 1
+ERROR - 2016-12-14 13:26:56 --> Severity: Error --> Call to a member function result_array() on a non-object D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php 249
+ERROR - 2016-12-14 13:33:26 --> 404 Page Not Found: admin/Test/test
+ERROR - 2016-12-14 13:51:10 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240---Unknown column 'send_add_id' in 'field list' - Invalid query: INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '13526834708', 'shanghai', '1', '地址1', NULL, NULL, '16-12-14 01:51:10')
+ERROR - 2016-12-14 13:53:41 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240---Unknown column 'send_add_id' in 'field list' - Invalid query: INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '2', '地址2', NULL, NULL, '16-12-14 01:53:41')
+ERROR - 2016-12-14 13:56:08 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240---Unknown column 'send_add_id' in 'field list' - Invalid query: INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '2', '地址2', NULL, NULL, '16-12-14 01:56:08')
+ERROR - 2016-12-14 14:01:45 --> Query error: file: D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240---Column 'send_addr_id' cannot be null - Invalid query: INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_addr_id`, `end_addr_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '1', '地址1', NULL, NULL, '16-12-14 02:01:45')
+ERROR - 2016-12-14 15:09:41 --> Severity: Parsing Error --> syntax error, unexpected T_CLASS D:\phpstudy\WWW\erp_wms\application\libraries\CI_Fedex.php 4
+ERROR - 2016-12-14 15:09:46 --> Severity: Parsing Error --> syntax error, unexpected T_CLASS D:\phpstudy\WWW\erp_wms\application\libraries\CI_Fedex.php 4
+ERROR - 2016-12-14 15:10:18 --> Severity: Error --> Class 'FedexWebServiceClass' not found D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 947
+ERROR - 2016-12-14 15:11:00 --> Severity: Error --> Call to undefined method Test::createOpenShipment() D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 21
+ERROR - 2016-12-14 15:13:43 --> Severity: Error --> Call to undefined method Test::createOpenShipment() D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php 21
+ERROR - 2016-12-14 15:15:09 --> Severity: Warning --> SoapClient::SoapClient() [<a href='soapclient.soapclient'>soapclient.soapclient</a>]: I/O warning : failed to load external entity &quot;./wsdl/OpenShipService_v7.wsdl&quot; D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 841
+ERROR - 2016-12-14 15:15:09 --> Severity: error --> Exception: SOAP-ERROR: Parsing WSDL: Couldn't load from './wsdl/OpenShipService_v7.wsdl' : failed to load external entity "./wsdl/OpenShipService_v7.wsdl"
+ D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 841
+ERROR - 2016-12-14 15:15:09 --> Severity: Error --> SOAP-ERROR: Parsing WSDL: Couldn't load from './wsdl/OpenShipService_v7.wsdl' : failed to load external entity "./wsdl/OpenShipService_v7.wsdl"
+ D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 841
+ERROR - 2016-12-14 15:17:42 --> Severity: Parsing Error --> syntax error, unexpected '.', expecting ',' or ';' D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 8
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/labraries/fedex/794650200547shiplabel.pdf) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 639
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 640
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 641
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/labraries/fedex/794650200499shiplabel.pdf) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 639
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 640
+ERROR - 2016-12-14 15:58:04 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 641
+ERROR - 2016-12-14 15:59:00 --> 404 Page Not Found: admin/Test/794650200547shiplabel.pdf
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/labraries/fedex/794650202208shiplabel.pdf) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 639
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 640
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 641
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/labraries/fedex/794650202182shiplabel.pdf) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 639
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 640
+ERROR - 2016-12-14 16:00:59 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 641
+ERROR - 2016-12-14 16:05:27 --> Severity: Parsing Error --> syntax error, unexpected T_STRING, expecting ',' or ';' D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 16:06:48 --> Severity: Parsing Error --> syntax error, unexpected T_STRING, expecting ',' or ';' D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 16:07:53 --> Severity: Parsing Error --> syntax error, unexpected T_STRING, expecting ',' or ';' D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 16:08:17 --> Severity: Parsing Error --> syntax error, unexpected T_STRING, expecting ',' or ';' D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/../web/fedex/miandan/794650218700) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 643
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 644
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\/../web/fedex/miandan/794650218663) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 643
+ERROR - 2016-12-14 17:13:35 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 644
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\../web/fedex/miandan/794650219122) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 643
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 644
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fopen(D:\phpstudy\WWW\erp_wms\application\../web/fedex/miandan/794650219144) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 642
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fwrite() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 643
+ERROR - 2016-12-14 17:15:44 --> Severity: Warning --> fclose() expects parameter 1 to be resource, boolean given D:\phpstudy\WWW\erp_wms\application\libraries\fedex\fedex.class.php 644

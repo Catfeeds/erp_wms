@@ -1,0 +1,134 @@
+<div class="container-fluid">
+
+<!-- BEGIN PAGE HEADER-->
+
+<div class="row-fluid">
+  <div class="span12">
+    <h3 class="page-title"> <small> </small> </h3>
+    <ul class="breadcrumb">
+      <li> <i class="icon-home"></i> <a>供货产品管理</a> <span class="icon-angle-right"></span> </li>
+      <li> <a href="#">供应产品管理</a> <span class="icon-angle-right"></span> </li>
+      <li><a href="#">审核入库</a></li>
+    </ul>
+  </div>
+</div>
+<!-- END PAGE HEADER--> 
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+  <div class="span12"> 
+    <!-- BEGIN VALIDATION STATES-->
+    <div class="portlet box blue">
+      <div class="portlet-title">
+        <div class="caption"><i class="icon-reorder"></i>审核入库</div>
+      </div>
+      <div class="portlet-body form"> 
+        <!-- BEGIN FORM-->
+        <form action="" id="form_logccom_add" class="form-horizontal" method="post" >
+          <table class="table table-bordered table-hover dataTable">
+            <thead>
+              <tr>
+                <th bgcolor="#E2EEFE" colspan="4">入库重要参数</th>
+              </tr>
+              <tr>
+                <th width="100">平台编号</th>
+                <td width="240"><{if $de.stock_id}>未入库<{/if}></td>
+                <th width="100">平台仓库号</th>
+                <td width="*"><{if $de.stock_id}> <{else}> <{/if}></td>
+              </tr>
+              <tr>
+                <th style="color:red;">同步库存</th>
+                <td><{$de.c_num}></td>
+                <th style="color:red;">已分配库存</th>
+                <td><{$de.online_num}></td>
+              </tr>
+              <tr>
+                <th style="color:red;">推送库存</th>
+                <td><{$de.send_num}></td>
+                <th>已发货</th>
+                <td><{$de.sell_num}></td>
+              </tr>
+               <tr>
+                <th>当前拿货价</th>
+                <td><{$de.price}></td>
+                <th>同步拿货价格</th>
+                <td><{$de.pro.price}></td>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th bgcolor="#E2EEFE" colspan="4">供应商重要参数</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>供应对接编号</th>
+              <td><{$de.out_product_id}></td>
+              <th>供应商仓库号</th>
+              <td><{$de.out_warehouse_id}></td>
+            </tr>
+            <tr>
+              <th>贸易类型</th>
+              <td><{$de.pro.shop_type}></td>
+              <th>仓库地址</th>
+              <td><{$de.pro.shop_addr}></td>
+            </tr>
+            <tr>
+              <th>税率</th>
+              <td><{$de.kjt_rate}></td>
+              <th>购买上限</th>
+              <td><{$de.max_num}></td>
+            </tr>
+            <tr>
+              <th style="color:red;">同步拿货定价</th>
+              <td><{$de.pro.price}></td>
+              <th>市场指导价</th>
+              <td><{$de.pro.mark_price}></td>
+            </tr>
+            <tr>
+              <th style="color:red;">毛重</th>
+              <td><{$de.pro.mz}></td>
+              <th>净重</th>
+              <td><{$de.pro.jz}></td>
+            </tr>
+            <thead>
+              <tr>
+                <th bgcolor="#E2EEFE" colspan="4">商品信息</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>商品条码</th>
+              <td><{$de.pro.barcode}></td>
+              <th>产品名称</th>
+              <td><{$de.pro.name}></td>
+            </tr>
+            <tr>
+              <th>品牌</th>
+              <td><{$de.pro.brand}></td>
+              <th>商品类型</th>
+              <td><{$de.pro.catname}></td>
+            </tr>
+            <tr>
+              <th>规格</th>
+              <td><{$de.pro.gg}></td>
+              <th>商品简述</th>
+              <td><{$de.pro.desc}></td>
+            </tr>
+            <tr>
+              <th>功能/用途</th>
+              <td colspan="3"><{$de.pro.gn}></td>
+            </tr>
+            <tr>
+              <th>成分</th>
+              <td colspan="3"><{$de.pro.cf}></td>
+            </tr>
+          </table>
+        </form>
+        <!-- END FORM--> 
+      </div>
+    </div>
+    <!-- END VALIDATION STATES--> 
+  </div>
+</div>
+
+<!-- END PAGE CONTENT--> 
+
+</div

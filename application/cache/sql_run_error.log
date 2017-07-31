@@ -1,0 +1,828 @@
+admin------url[Supplier/sproduct_addr]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_sp_addr`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 399
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 598---Table 'df_erp.dferp_sp_addr' doesn't exist
+
+admin------url[Supplier/sproduct_bin_list]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product_bin`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 258
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 203---Table 'df_erp.dferp_sp_product_bin' doesn't exist
+
+admin------url[Supplier/sproduct_bin_list]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product_bin`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 258
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 203---Table 'df_erp.dferp_sp_product_bin' doesn't exist
+
+admin------url[Supplier/sproduct_bin_list]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_sp_product_bin`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 258
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 203---Table 'df_erp.dferp_sp_product_bin' doesn't exist
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 SELECT `id`, `user`, `company`, `mobile`, `addr_id`, `addr_name`, `en_addr`, `status`FROM `dferp_sp_user`WHERE `id` = '1'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 570---Unknown column 'addr_id' in 'field list'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 SELECT `id`, `user`, `company`, `mobile`, `addr_id`, `addr_name`, `en_addr`, `status`FROM `dferp_sp_user`WHERE `id` = '2'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 570---Unknown column 'addr_id' in 'field list'
+
+sp------url[Order/order_upload]----
+  【sql报错语句】 select  batches_name as name,id   from   dferp_batches    where     userid='2'   and  status<=2   
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---Table 'df_erp.dferp_batches' doesn't exist
+
+sp------url[Order/order_upload]----
+  【sql报错语句】 select  batches_name as name,id   from   dferp_batches    where     userid='2'   and  status<=2   
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---Table 'df_erp.dferp_batches' doesn't exist
+
+sp------url[Order/order_list]----
+  【sql报错语句】 SELECT *FROM `dferp_order_list`WHERE `order_id` = '5'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 72
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Order.php line: 292---Table 'df_erp.dferp_order_list' doesn't exist
+
+admin------url[Test/test1]----
+  【sql报错语句】 SELECT *FROM `dferp_fedex_user`, 1WHERE `type` = 1
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 248
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Test.php line: 18---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1
+WHERE `type` = 1' at line 2
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '13526834708', 'shanghai', '1', '地址1', NULL, NULL, '16-12-14 01:51:10')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 540---Unknown column 'send_add_id' in 'field list'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '2', '地址2', NULL, NULL, '16-12-14 01:53:41')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 540---Unknown column 'send_add_id' in 'field list'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_add_id`, `end_add_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '2', '地址2', NULL, NULL, '16-12-14 01:56:08')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 540---Unknown column 'send_add_id' in 'field list'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_addr_id`, `end_addr_id`, `addtime`) VALUES ('jingfs', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', 'aaacompany', '12345678901', 'shanghai', '1', '地址1', NULL, NULL, '16-12-14 02:01:45')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 240
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 542---Column 'send_addr_id' cannot be null
+
+admin------url[Package/get_fedex_index]----
+  【sql报错语句】 SELECT `type`, `personName`, `companyName`, `phoneNumber`, `Address_streetLines`, `Address_City`, `Address_StateOrProvince`, `Address_PostalCode`, `Address_CountryCode`, `Address_Residential`, `account`FROM `dferp_fedex_user`WHERE `id` = '3'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 232
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 246---Unknown column 'Address_StateOrProvince' in 'field list'
+
+admin------url[Package/get_fedex_index]----
+  【sql报错语句】 SELECT `type`, `personName`, `companyName`, `phoneNumber`, `Address_streetLines`, `Address_City`, `Address_StateOrProvince`, `Address_PostalCode`, `Address_CountryCode`, `Address_Residential`, `account`FROM `dferp_fedex_user`WHERE `id` = '3'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 232
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 246---Unknown column 'Address_StateOrProvince' in 'field list'
+
+admin------url[Package/get_fedex_index]----
+  【sql报错语句】 SELECT `id`FROM `dferp_order`WHERE `fedex_package_id` = '27'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 292
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 281---Unknown column 'fedex_package_id' in 'where clause'
+
+admin------url[Package/get_fedex_index]----
+  【sql报错语句】 SELECT `id`FROM `dferp_order`WHERE `fedex_pakage_id` = '27'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 292
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 281---Unknown column 'fedex_pakage_id' in 'where clause'
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 60---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 82---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 60---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 82---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 60---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 82---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 60---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 82---Table 'zjh_product.dferp_stock_filing_' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 58---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 79---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 58---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 79---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 58---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_0` as `b` ON `a`.`id`=`b`.`id`ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 79---Table 'zjh_product.dferp_stock_filing_0' doesn't exist
+
+sp------url[Package/package_checkbox]----
+  【sql报错语句】 UPDATE `dferp_fedex_package` SET `status` = CASE WHEN `id` = 27 THEN 4ELSE `status` ENDWHERE `id` IN(27)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 154
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package.php line: 447---Table 'zjh_product.dferp_fedex_package' doesn't exist
+
+sp------url[Package/package_checkbox]----
+  【sql报错语句】 UPDATE `dferp_fedex_package` SET `status` = CASE WHEN `id` = 27 THEN 4ELSE `status` ENDWHERE `id` IN(27)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 154
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package.php line: 447---Table 'zjh_product.dferp_fedex_package' doesn't exist
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 SELECT `id`, `companyName`, `Address_City`FROM `dferp_fedex_user`WHERE `addr_id` = 2
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 251
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 623---Unknown column 'addr_id' in 'where clause'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 SELECT `id`, `companyName`, `Address_City`FROM `dferp_fedex_user`WHERE `addr_id` = '2'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 251
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 623---Unknown column 'addr_id' in 'where clause'
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','Array)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','Array)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','Array)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','Array)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','Array)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 insert into dferp_batches ( `batches_name`, `userid`,`huoyunzhan_uid`) VALUES ('2016年12月29日','16','17)
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''17)' at line 1
+
+sp------url[Order/add_new_batches]----
+  【sql报错语句】 SELECT `huoyunzhan_id`FROM `dferp_sp_user`WHERE `id` = '16'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 253
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Order.php line: 605---Unknown column 'huoyunzhan_id' in 'field list'
+
+sp------url[Package3/package_confirm]----
+  【sql报错语句】 SELECT `id`FROM `dferp_order`WHERE `batches_id` = `Resource id` `#38`AND `package_status` =0
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 268
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package3.php line: 486---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`#38`
+AND `package_status` =0' at line 3
+
+sp------url[Package3/package_confirm]----
+  【sql报错语句】 SELECT `id`FROM `dferp_order`WHERE `batches_id` = `Resource id` `#38`AND `package_status` =0
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 292
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package3.php line: 486---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`#38`
+AND `package_status` =0' at line 3
+
+sp------url[Package3/package_confirm]----
+  【sql报错语句】 UPDATE `dferp_batches` SET `status` = 5WHERE `id` = `Array`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Batches_model.php line: 132
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package3.php line: 490---Unknown column 'Array' in 'where clause'
+
+sp------url[Package3/package_confirm]----
+  【sql报错语句】 UPDATE `dferp_batches` SET `status` = 5WHERE `id` = `Array`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Batches_model.php line: 132
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Package3.php line: 490---Unknown column 'Array' in 'where clause'
+
+admin------url[Test/test2]----
+  【sql报错语句】 SELECT *FROM `users`WHERE `username` = '123456' LIMIT 1
+[0] D:\phpstudy\WWW\erp_wms\system\libraries\Form_validation.php line: 1121
+[1] D:\phpstudy\WWW\erp_wms\system\libraries\Form_validation.php line: 776---Table 'zjh_product.users' doesn't exist
+
+admin------url[Package/get_fedex_index]----
+  【sql报错语句】 SELECT `abroad_currency`FROM `dferp_order`WHERE `id` = '57'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 268
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 502---Unknown column 'abroad_currency' in 'field list'
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`) VALUES ('44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`) VALUES ('46', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`) VALUES ('44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`) VALUES ('44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`) VALUES ('44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`) VALUES ('44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`) VALUES ('46', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`) VALUES ('46', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`) VALUES ('46', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 INSERT INTO `dferp_fedex_package_rateinfo` (`fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`) VALUES ('46', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 196
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 807---Column 'TotalBaseCharge' cannot be null
+
+admin------url[Package/package_fee_info]----
+  【sql报错语句】 SELECT `id`, `fedex_package_id`, `TotalBaseCharge`, `TotalFreightDiscounts`, `TotalNetFreight`, `TotalSurcharges`, `TotalNetFedExCharge`, `TotalTaxes`, `TotalRebates`, `TotalDutiesAndTaxes`, `TotalNetChargeWithDutiesAndTaxes`, `SurchargeType`, `rate_currency`FROM `dferp_fedex_package_rateinfo`WHERE `fedex_package_id` = '44'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Package_model.php line: 178
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 871---Unknown column 'TotalBaseCharge' in 'field list'
+
+admin------url[Supplier/supplier_add_or_edit]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `mobile`, `en_addr`, `addr_id`, `addr_name`, `send_addr_id`, `end_addr_id`, `payor_id`, `dutiesPayment_id`, `huoyunzhan_id`, `filing_type`, `filing_kjt_type`, `addtime`) VALUES ('jjjjjj', 'e10adc3949ba59abbe56e057f20f883e', 'e10adc3949ba59abbe56e057f20f883e', '11223', '13215454132', 'shanghai', '2', '货运站', '1', '4', '6', '4', '', '1', '1', '17-02-21 01:57:54')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 568---Unknown column 'huoyunzhan_id' in 'field list'
+
+admin------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*, `b`.`name_par`, `b`.`price_par`, `b`.`status_par`FROM `dferp_stockAS` `a`JOIN `dferp_` ON `AS``b`ORDER BY `id` DESC LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 55
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Filing.php line: 67---Table 'zjh_product.dferp_stockas' doesn't exist
+
+admin------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*, `b`.`name_par`, `b`.`price_par`, `b`.`status_par`FROM `dferp_stockAS` `a`ORDER BY `id` DESC LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 54
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Filing.php line: 67---Table 'zjh_product.dferp_stockas' doesn't exist
+
+admin------url[Filing/filing_list]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_stock`WHERE `customs_type` = '2'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 22
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Filing.php line: 55---Unknown column 'customs_type' in 'where clause'
+
+admin------url[Filing/filing_list]----
+  【sql报错语句】 SELECT COUNT(*) AS `numrows`FROM `dferp_stock`WHERE `customs_type` = '1'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 22
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Filing.php line: 55---Unknown column 'customs_type' in 'where clause'
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_1` as `b` ON `a`.`id`=`b`.`id`WHERE `bar_code` = '1234567890'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 58---Unknown column 'bar_code' in 'where clause'
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*, `b`.`name_par` as `hg_name`, `b`.`price_par` as `hg_price`, `b`.`status_par` as `hg_status`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_1` as `b` ON `a`.`id`=`b`.`id`WHERE `bar_code` = '1234567890'ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 79---Unknown column 'bar_code' in 'where clause'
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.`id`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_1` as `b` ON `a`.`id`=`b`.`id`WHERE `bar_code` = '1234567890'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 85
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 58---Unknown column 'bar_code' in 'where clause'
+
+sp------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `a`.*, `b`.`name_par` as `hg_name`, `b`.`price_par` as `hg_price`, `b`.`status_par` as `hg_status`FROM `dferp_stock` as `a`LEFT JOIN `dferp_stock_filing_1` as `b` ON `a`.`id`=`b`.`id`WHERE `bar_code` = '1234567890'ORDER BY `a`.`id` desc LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 71
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Filing.php line: 79---Unknown column 'bar_code' in 'where clause'
+
+sp------url[Product/product_checkbox]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product_bin` (`id`, `userid`, `upload_num`, `ch_name`, `en_name`, `barcode`, `desc`, `ch_brand`, `en_brand`, `price`, `mark_price`, `catname`, `catid`, `country`, `countryid`, `length`, `width`, `height`, `ch_spe`, `en_spe`, `ch_ing`, `en_ing`, `ch_pur`, `en_pur`, `type`, `gw`, `nw`, `con`, `filing_status`, `uptime`, `recorder_apply_time`, `recorder_status`, `deadline`) VALUES ('49', '17', '0', '三只松鼠', '打', '21321', '打', '三只松鼠', '打', '200.00', '210.00', '类别1', '1', '美国', '502', '10', '10', '10', '打', '打', '打', '打', '大厦', '打', '1', '200', '210', NULL, '1', '2017-03-15 09:31:21', '0000-00-00 00:00:00', NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 348
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Product.php line: 347---Unknown column 'recorder_apply_time' in 'field list'
+
+sp------url[Product/product_checkbox]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product_bin` (`id`, `userid`, `upload_num`, `ch_name`, `en_name`, `barcode`, `desc`, `ch_brand`, `en_brand`, `price`, `mark_price`, `catname`, `catid`, `country`, `countryid`, `length`, `width`, `height`, `ch_spe`, `en_spe`, `ch_ing`, `en_ing`, `ch_pur`, `en_pur`, `type`, `gw`, `nw`, `con`, `filing_status`, `uptime`, `recorder_apply_time`, `recorder_status`, `deadline`) VALUES ('49', '17', '0', '三只松鼠', '打', '21321', '打', '三只松鼠', '打', '200.00', '210.00', '类别1', '1', '美国', '502', '10', '10', '10', '打', '打', '打', '打', '大厦', '打', '1', '200', '210', NULL, '1', '2017-03-15 09:31:21', '0000-00-00 00:00:00', NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 348
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Product.php line: 347---Unknown column 'recorder_apply_time' in 'field list'
+
+sp------url[Product/product_checkbox]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product_bin` (`id`, `userid`, `upload_num`, `ch_name`, `en_name`, `barcode`, `desc`, `ch_brand`, `en_brand`, `price`, `mark_price`, `catname`, `catid`, `country`, `countryid`, `length`, `width`, `height`, `ch_spe`, `en_spe`, `ch_ing`, `en_ing`, `ch_pur`, `en_pur`, `type`, `gw`, `nw`, `con`, `filing_status`, `uptime`, `recorder_apply_time`, `recorder_status`, `deadline`) VALUES ('49', '17', '0', '三只松鼠', '打', '21321', '打', '三只松鼠', '打', '200.00', '210.00', '类别1', '1', '美国', '502', '10', '10', '10', '打', '打', '打', '打', '大厦', '打', '1', '200', '210', NULL, '1', '2017-03-15 09:31:21', '0000-00-00 00:00:00', NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 348
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Product.php line: 348---Unknown column 'recorder_apply_time' in 'field list'
+
+sp------url[Product/product_checkbox]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product_bin` (`id`, `userid`, `upload_num`, `ch_name`, `en_name`, `barcode`, `desc`, `ch_brand`, `en_brand`, `price`, `mark_price`, `catname`, `catid`, `country`, `countryid`, `length`, `width`, `height`, `ch_spe`, `en_spe`, `ch_ing`, `en_ing`, `ch_pur`, `en_pur`, `type`, `gw`, `nw`, `con`, `filing_status`, `uptime`, `recorder_apply_time`, `recorder_status`, `deadline`) VALUES ('49', '17', '0', '三只松鼠', '打', '21321', '打', '三只松鼠', '打', '200.00', '210.00', '类别1', '1', '美国', '502', '10', '10', '10', '打', '打', '打', '打', '大厦', '打', '1', '200', '210', NULL, '1', '2017-03-15 09:31:21', '0000-00-00 00:00:00', NULL, NULL)
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 348
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Product.php line: 348---Unknown column 'recorder_apply_time' in 'field list'
+
+admin------url[Filing/filing_list]----
+  【sql报错语句】 SELECT `name_par`, `price_par`, `status_par`FROM `dferp_stock_filing_12`WHERE `id` = '10000065'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Filing_model.php line: 108
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Filing.php line: 100---Table 'zjh_product.dferp_stock_filing_12' doesn't exist
+
+admin------url[Supplier/supplier_list]----
+  【sql报错语句】 SELECT `company` FROM  dferp_fedex_user WHERE id=5
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---Unknown column 'company' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 377---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Order/order_add_logis_no]----
+  【sql报错语句】 SELECT `logistics_no`, `logistics_type`FROM `dferp_order_list`WHERE `id` = '11'
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Order_model.php line: 298
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Order.php line: 381---Unknown column 'logistics_no' in 'field list'
+
+admin------url[Logistics/fedex_user_add]----
+  【sql报错语句】 SELECT *FROM `dferp_fedex_counrty`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 216
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Logistics.php line: 263---Table 'zjh_product.dferp_fedex_counrty' doesn't exist
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_fedex_account WHERE  ORDER BY id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_fedex_account WHERE  ORDER BY id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_fedex_account WHERE  ORDER BY id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_fedex_account WHERE  ORDER BY id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE  ORDER BY id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE   order by id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE   order by id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id DESC  limit 0,15' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE   order by id DESC 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id DESC' at line 1
+
+admin------url[Package/fedex_config]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE   order by id DESC  limit 0,15
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id DESC  limit 0,15' at line 1
+
+admin------url[Logistics/logistics_add]----
+  【sql报错语句】 INSERT INTO dferp_logistics_temp_con (`temp_id`,`default_num`,`default_price`,`add_num`,`add_price`,`define_cityid`,`define_city_name`) VALUES
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Logistics.php line: 54
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `sp_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11', '123456', '123456', 'aaacompany', 'shanghai', '2|货运站', '12', '14', '14', '24', '1', '1', NULL, '1', '17-04-18 03:03:14')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 499---Unknown column 'sp_addr' in 'field list'
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `sp_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11', '123456', '123456', 'aaacompany', 'shanghai', '2|货运站', '12', '14', '14', '24', '1', '1', '1', '1', '17-04-18 03:04:06')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 499---Unknown column 'sp_addr' in 'field list'
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `sp_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11222', '123456', '123456', 'aaacompany', 'shanghai', '2|货运站', '12', '14', '14', '24', '1', '1', '1', '1', '17-04-18 03:04:31')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 499---Unknown column 'sp_addr' in 'field list'
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `sp_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan`, `addr_id`, `addr_name`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11222', '123456', '123456', 'aaacompany', 'shanghai', '2|货运站', '12', '14', '14', '24', '2', '货运站', '1', '1', '1', '1', '17-04-18 03:12:11')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 501---Unknown column 'sp_addr' in 'field list'
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan`, `addr_id`, `addr_name`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11222', '123456', '123456', 'aaacompany', 'shanghai', '12', '14', '14', '24', '2', '货运站', '1', '1', '1', '1', '17-04-18 03:12:44')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 500---Unknown column 'sp_huoyunzhan' in 'field list'
+
+admin------url[Supplier/supplier_add]----
+  【sql报错语句】 INSERT INTO `dferp_sp_user` (`user`, `pass`, `act_pass`, `company`, `en_addr`, `send_addr_id`, `payor_id`, `dutiesPayment_id`, `sp_huoyunzhan_uid`, `addr_id`, `addr_name`, `filing_type`, `filing_kjt_type`, `fedex_account`, `status`, `addtime`) VALUES ('text11222', '123456', '123456', 'aaacompany', 'shanghai', '12', '14', '14', '24', '2', '货运站', '1', '1', '1', '1', '17-04-18 03:13:30')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 283
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 500---Unknown column 'sp_huoyunzhan_uid' in 'field list'
+
+admin------url[Package/test_fedex]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1081
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/test_fedex]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1081
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/test_fedex]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1081
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Logistics/fedex_user_add]----
+  【sql报错语句】 SELECT *FROM `dferp_fedex_country`
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Logistics_model.php line: 216
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Logistics.php line: 275---Table 'zjh_product.dferp_fedex_country' doesn't exist
+
+admin------url[Country/country_list]----
+  【sql报错语句】 SELECT `c_id`, `c_name`, `c_enname`, `c_display`FROM `dferp_country` LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Country_model.php line: 37
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Country.php line: 67---Unknown column 'c_enname' in 'field list'
+
+admin------url[Country/country_list]----
+  【sql报错语句】 SELECT `c_id`, `c_name`, `c_enname`, `c_display`FROM `dferp_country` LIMIT 15
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Country_model.php line: 37
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Country.php line: 67---Unknown column 'c_enname' in 'field list'
+
+sp------url[Order/order_upload_code]----
+  【sql报错语句】 SELECT `fedex_currecy` FROM dferp_sp_user WHERE id=17
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---Unknown column 'fedex_currecy' in 'field list'
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/get_fedex_rate]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 519---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/retest_fedex]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1140
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT id FROM dferp_fedex_pakge WHERE `run_status`=1 ORDER BY ASC `uptime`+`id` LIMIT 1 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC `uptime`+`id` LIMIT 1' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT id FROM dferp_fedex_pakge WHERE `run_status`=1 ORDER BY ASC (`uptime`+`id`) LIMIT 1 
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC (`uptime`+`id`) LIMIT 1' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 68
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 68
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 75
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 75
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_account WHERE id=
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 75
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR id=1
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id=1' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR id=2
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id=2' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR id=3
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id=3' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR `fedex_package_id`=1
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`fedex_package_id`=1' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR `fedex_package_id`=2
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`fedex_package_id`=2' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 SELECT * FROM dferp_fedex_package_rateinfo WHERR `fedex_package_id`=3
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80
+[1]  line: ---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`fedex_package_id`=3' at line 1
+
+admin------url[Package/package_list]----
+  【sql报错语句】 SELECT `time`,`content` FROM dferp_fedex_pakge_logWHERE `pk_id`=3 ORDER BY `id` DESC LIMIT 1
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3 ORDER BY `id` DESC LIMIT 1' at line 1
+
+admin------url[Package/package_list]----
+  【sql报错语句】 SELECT `time`,`content` FROM dferp_fedex_pakge_logWHERE `pk_id`=3 ORDER BY `id` DESC LIMIT 1
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=3 ORDER BY `id` DESC LIMIT 1' at line 1
+
+admin------url[Package/package_list]----
+  【sql报错语句】 SELECT `time`,`content` FROM dferp_fedex_pakge_logWHERE `pk_id`=2 ORDER BY `id` DESC LIMIT 1
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=2 ORDER BY `id` DESC LIMIT 1' at line 1
+
+admin------url[Package/package_list]----
+  【sql报错语句】 SELECT `time`,`content` FROM dferp_fedex_pakge_logWHERE `pk_id`=1 ORDER BY `id` DESC LIMIT 1
+[0]  line: 
+[1] D:\phpstudy\WWW\erp_wms\system\core\CodeIgniter.php line: 596---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=1 ORDER BY `id` DESC LIMIT 1' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `assign_fee`=312, WHERE `id`=12
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1112
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`=12' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `assign_fee`=468, WHERE `id`=13
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1112
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`=13' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `assign_fee`=312, WHERE `id`=12
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1112
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`=12' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `assign_fee`=468, WHERE `id`=13
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1112
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`=13' at line 1
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=14
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=15
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=14
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=15
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+sp------url[Order/order_upload_barcode_done]----
+  【sql报错语句】 INSERT INTO `dferp_order_list` (`abroad_currency`, `abroad_price`, `abroad_weight`, `abroad_weight_unit`, `en_name`, `import_id`, `name`, `num`, `order_id`, `price`, `rate`, `stock_id`, `userid`, `weight`) VALUES ('USD','5','0.250','KG','fruitmeat3','20170511143647438399','零食蜜饯果脯水果干3','1',16,'2.88',0.0288,'10000063','17','250')
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Order.php line: 952
+[1]  line: ---Unknown column 'en_name' in 'field list'
+
+sp------url[Order/order_upload_barcode_done]----
+  【sql报错语句】 INSERT INTO `dferp_order_list` (`abroad_currency`, `abroad_price`, `abroad_weight`, `abroad_weight_unit`, `en_name`, `import_id`, `name`, `num`, `order_id`, `price`, `rate`, `stock_id`, `userid`, `weight`) VALUES ('USD','5','0.250','KG','fruitmeat3','20170511143740985853','零食蜜饯果脯水果干3','1',17,'2.88',0.0288,'10000063','17','250'), ('USD','6','0.250','KG','fruitmeat5','20170511143740985853','零食蜜饯果脯水果干5','5',17,'20.00',0.2,'10000065','17','250')
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\sp\Order.php line: 952
+[1]  line: ---Unknown column 'en_name' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=4
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=16
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=17
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Package/act_api]----
+  【sql报错语句】 UPDATE dferp_order SET `abroad_currency`=USD WHERE `id`=18
+[0] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 1171
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Package.php line: 80---Unknown column 'USD' in 'field list'
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', NULL, 'apple', '中国', '<p>dhasiddhaid</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', NULL, 'DASDA', '中国', '<p>2321312</p>', NULL, '12')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', NULL, '彩虹牌', '中国', '<p>大苏打撒旦</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', NULL, '星爸爸', '中国', '<p>大苏打大厦</p>', NULL, '15')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', NULL, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', NULL, 'apple', '中国', '<p>dhasiddhaid</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', NULL, 'DASDA', '中国', '<p>2321312</p>', NULL, '12')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', NULL, '彩虹牌', '中国', '<p>大苏打撒旦</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', NULL, '星爸爸', '中国', '<p>大苏打大厦</p>', NULL, '15')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', NULL, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', NULL, 'apple', '中国', '<p>dhasiddhaid</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', NULL, 'DASDA', '中国', '<p>2321312</p>', NULL, '12')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', NULL, '彩虹牌', '中国', '<p>大苏打撒旦</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', NULL, '星爸爸', '中国', '<p>大苏打大厦</p>', NULL, '15')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', NULL, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000014', 'u拉拉land', '149.00', 99, 'apple', '中国', '<p>dhasiddhaid</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000013', 'u23213', '149.00', 99, 'DASDA', '中国', '<p>2321312</p>', NULL, '12')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000010', 'u七彩玲珑糖', '150.00', 99, '彩虹牌', '中国', '<p>大苏打撒旦</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000011', 'u丸子', '180.00', 99, '星爸爸', '中国', '<p>大苏打大厦</p>', NULL, '15')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
+admin------url[Supplier/synchronize_product]----
+  【sql报错语句】 INSERT INTO `dferp_sp_product` (`userid`, `upload_num`, `ch_name`, `price`, `mark_price`, `ch_brand`, `country`, `con`, `ch_pur`, `gw`) VALUES (0, 'u10000012', 'u老白干', '150.00', 99, '测试品牌', '中国', '<p>DSAD ASD ASDA</p>', NULL, '100')
+[0] D:\phpstudy\WWW\erp_wms\application\models\Base_Supplier_model.php line: 82
+[1] D:\phpstudy\WWW\erp_wms\application\controllers\admin\Supplier.php line: 46---Column 'ch_pur' cannot be null
+
